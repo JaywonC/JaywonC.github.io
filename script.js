@@ -1,10 +1,24 @@
-// Smooth scroll for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+let intro = document.querySelector('.intro');
+let logoSpan = document.querySelectorAll('.logo');
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+window.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
+    logoSpan.forEach((span, idx) => {
+      setTimeout(() => {
+        span.classList.add('active');
+      }, (idx + 1) * 400);
     });
+
+    setTimeout(() => {
+      logoSpan.forEach((span, idx) => {
+        setTimeout(() => {
+          span.classList.remove('active');
+        }, (idx + 1) * 50);
+      });
+    }, 2000);
+
+    setTimeout(() => {
+      intro.style.top = '-100vh';
+    }, 2300);
+  });
 });
