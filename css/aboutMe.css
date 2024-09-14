@@ -1,42 +1,737 @@
+@import "https://fonts.googleapis.com/css?family=Quicksand";
+
+@import "https://fonts.googleapis.com/css?family=Bagel+Fat+One";
+
+@import "https://fonts.cdnfonts.com/css/pecita";
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth
+}
+
 body {
-    font-family: Arial, sans-serif;
+    background-color: #01161e;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    overflow-x: hidden
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.overlay {
+    position: relative;
+    width: 100%;
+    display: inline-block
 }
 
-header {
-    text-align: center;
-    margin-bottom: 20px;
+.brand {
+    position: relative;
+    width: 100%;
+    text-align: center
 }
 
-header h1 {
+.brand a {
+    font-family: 'Pecita', sans-serif;
+    font-size: 60px;
+    z-index: 2;
+    color: #EFF6E0;
+    text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc;
+    text-decoration: none
+}
+
+.navBar {
+    list-style-type: none;
     margin: 0;
-    font-size: 2em;
-    color: #007bff;
-}
-
-.content {
+    padding: 0;
     text-align: center;
+    overflow: hidden
 }
 
-h2 {
-    color: #007bff;
-}
-
-footer {
+.navBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     text-align: center;
-    margin-top: 20px;
-    font-size: 0.9em;
-    color: #777;
+    overflow: hidden
+}
+
+.navBar li {
+    display: inline-block
+}
+
+.navBar li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #EFF6E0;
+    font-size: 20px
+}
+
+a :link,
+a:visited,
+a:hover,
+a:active {
+    color: #EFF6E0;
+    text-decoration: none
+}
+
+.navBar li a:hover .glow {
+    color: #EFF6E0;
+    text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc
+}
+
+.navBar li a::after {
+    content: ★
+}
+
+.navBar li #aboutmeLink .glow {
+    color: #EFF6E0;
+    text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc
+}
+
+.header {
+    position: relative;
+    text-align: center;
+    color: #6D6875;
+    background: url(images/aboutme.png) no-repeat center center;
+    background-size: cover;
+    margin-top: -50px
+}
+
+#name {
+    color: #124559;
+    width: auto;
+    -webkit-text-stroke: 1px #598392;
+    text-shadow: 4px 2px 2px #AEC3B0
+}
+
+.aboutme {
+    position: relative;
+    width: 100%;
+    color: #EFF6E0;
+    background-color: #598392;
+    padding: 10px;
+    text-align: left;
+    margin-top: 50px
+}
+
+.aboutme h1 {
+    padding: 20px;
+    width: 100%
+}
+
+.aboutme .info {
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    max-width: 60rem
+    
+}
+
+.resume {
+    background-color: #124559;
+    position: relative;
+    width: 100%;
+    color: #AEC3B0;
+    padding-bottom: 20px;
+    margin-top: -50px
+}
+
+.resume ul {
+    list-style-type: disc
+}
+
+.resume h1 {
+    text-align: right;
+    padding: 20px;
+    width: 100%
+}
+
+.resume h2 {
+    padding-left: 20px;
+    float: left;
+    text-align: left
+}
+
+.education {
+    position: relative;
+    width: 100%;
+    height: fit-content
+}
+
+hr {
+    height: 5px;
+    background-color: #EFF6E0;
+    width: 100%
+}
+
+.half1 {
+    display: inline-block;
+    max-width: 70%;
+    text-align: left;
+    height: auto;
+    padding-left: 20px;
+    left: 0
+}
+
+#whole {
+    width: 100%
+}
+
+.half2 {
+    max-width: 30%;
+    text-align: right;
+    padding-right: 20px;
+    height: auto;
+    float: right
+}
+
+.other {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px
+}
+
+#sub {
+    margin-top: -10px
+}
+
+.experience,
+.leadership,
+.projects,
+.skills {
+    position: relative;
+    width: 100%;
+    height: auto
+}
+
+.skills .info {
+    padding: 10px
+}
+
+.skills span {
+    font-style: italic
+}
+
+.info3 {
+    position: relative;
+    background-color: #01161E;
+    display: flex;
+    width: 100%;
+    height: 300px;
+    color: #598392
+}
+
+.info3 h1 {
+    text-align: center;
+    top: 0;
+    width: 100%;
+    position: absolute;
+    padding: 20px;
+    width: 100%;
+    height: auto
+}
+
+.more {
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    bottom: 0
+}
+
+.info3 h2 {
+    position: relative;
+    text-align: center;
+    width: 100%
+}
+
+.button {
+    display: flex;
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;
+    text-decoration: none
+}
+
+button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    width: 120px;
+    height: 35px;
+    color: #598392;
+    font-size: 20px;
+    background-color: transparent;
+    border: 4px solid #598392;
+    text-decoration: none
+}
+
+.button a {
+    text-decoration: none
+}
+
+button:hover {
+    cursor: pointer;
+    animation: wiggle 3s linear infinite;
+    text-decoration: none
+}
+
+.anim {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup .8s linear forwards
+}
+
+@keyframes moveup {
+    100% {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
+/* Keyframes */
+@keyframes wiggle {
+
+    0%,
+    7% {
+        transform: rotateZ(0)
+    }
+
+    15% {
+        transform: rotateZ(-15deg)
+    }
+
+    20% {
+        transform: rotateZ(10deg)
+    }
+
+    25% {
+        transform: rotateZ(-10deg)
+    }
+
+    30% {
+        transform: rotateZ(6deg)
+    }
+
+    35% {
+        transform: rotateZ(-4deg)
+    }
+
+    40%,
+    100% {
+        transform: rotateZ(0)
+    }
+}
+
+.anim {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup .8s linear forwards
+}
+
+@keyframes moveup {
+    100% {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
+.ref .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+    color: #01161e;
+   }
+  
+  .ref svg {
+    display:inline-block;
+    color: #598392;
+    text-decoration: none; 
+    margin-left:10px;
+    margin-right:10px;
+}
+  
+  .ref svg:hover {
+    cursor: pointer;
+    opacity: 0.5;
+   }
+  
+    footer{
+      position:relative;
+      bottom: 0;
+      width: 100%;
+      height: auto;   /* Height of the footer */
+      background-color: #01161E;
+      padding:20px;
+    }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 530px) {
+    .navBar li {
+        width: 100%
+    }
+
+    a {
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-decoration: none !important;
+        color: #EFF6E0 !important;
+        font-size: 20px
+    }
+
+    a :link,
+    a:visited,
+    a:hover,
+    a:active {
+        color: #EFF6E0;
+        text-decoration: none
+    }
+
+    .header {
+        height: 300px;
+        background: url(images/aboutme.png) no-repeat center center;
+        background-size: contain
+    }
+
+    #name {
+        font-size: 60px
+    }
+
+    #name span {
+        margin-right: 20px
+    }
+
+    .info h3,
+    .resume h3,
+    .resume li {
+        font-size: 17px
+    }
+
+    .languages {
+        font-size: 15px
+    }
+
+    #title,
+    .resume h1,
+    .info3 h1 {
+        font-size: 40px
+    }
+
+    .half1 {
+        padding-left: 10px
+    }
+
+    .other {
+        padding-left: 10px
+    }
+
+    .half2 {
+        padding-right: 10px
+    }
+
+    .resume h2 {
+        padding-left: 10px;
+        font-size: 35px
+    }
+
+    .info3 h2 {
+        font-size: 25px
+    }
+
+    .info3 h1 {
+        margin-top: 0
+    }
+}
+
+@media only screen and (max-width:420px) {
+    #name {
+        font-size: 60px
+    }
+
+    #name span {
+        margin-right: 20px
+    }
+
+    .info h3,
+    .resume h3,
+    .resume li {
+        font-size: 15px
+    }
+
+    .languages {
+        font-size: 13px
+    }
+
+    #title,
+    .resume h1,
+    .info3 h1 {
+        font-size: 40px
+    }
+
+    .half1 {
+        padding-left: 10px
+    }
+
+    .other {
+        padding-left: 10px
+    }
+
+    .half2 {
+        padding-right: 10px
+    }
+
+    .resume h2,
+    .info3 h2 {
+        font-size: 20px
+    }
+
+    .info3 h1 {
+        margin-top: 0
+    }
+
+    .aboutme {
+        margin-top: 30px
+    }
+
+    .resume {
+        margin-top: -30px
+    }
+}
+
+@media only screen and (min-width: 530px) {
+    #name {
+        font-size: 70px
+    }
+
+    #name span {
+        margin-right: 20px
+    }
+
+    .header{
+        background-size:contain;
+        height: 300px;
+    }
+
+    .aboutme h3 {
+        margin-top: -40px
+    }
+
+    .resume h3 {
+        padding-left: 10px
+    }
+
+    .info h3,
+    .resume h3,
+    .resume li {
+        font-size: 17px
+    }
+
+    .languages {
+        font-size: 15px
+    }
+
+    #title,
+    .resume h1,
+    .info3 h1 {
+        font-size: 40px
+    }
+
+    .resume h2 {
+        font-size: 35px;
+        padding-left: 20px
+    }
+
+    .info3 h2 {
+        font-size: 25px
+    }
+
+    .info3 h1 {
+        margin-top: 25px
+    }
+
+    .half2 {
+        padding-right: 20px
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .header {
+        height: 400px;
+        background-size: contain;
+        margin-top: 30px
+    }
+
+    #name {
+        font-size: 90px;
+        margin-top: 0
+    }
+
+    #name span {
+        margin-right: 20px
+    }
+
+    .resume h2 {
+        font-size: 30px
+    }
+
+    .info h3,
+    .resume h3,
+    .resume li {
+        font-size: 20px
+    }
+
+    .languages {
+        font-size: 18px
+    }
+
+    #title,
+    .resume h1,
+    .info3 h1 {
+        font-size: 50px
+    }
+
+    .half1 {
+        padding-left: 10px
+    }
+
+    .other {
+        padding-left: 10px
+    }
+
+    .half2 {
+        padding-right: 20px
+    }
+
+    .resume h2 {
+        font-size: 35px
+    }
+
+    .info3 h2 {
+        font-size: 25px
+    }
+
+    .info3 h1 {
+        margin-top: 0
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .header {
+        height: 400px;
+        background-size: contain;
+        margin-top: 30px
+    }
+
+    #name {
+        font-size: 110px;
+        margin-top: -10px
+    }
+
+    #name span {
+        margin-right: 20px
+    }
+
+    #title,
+    .resume h1,
+    .info3 h1 {
+        font-size: 60px
+    }
+
+    .resume h2 {
+        font-size: 40px
+    }
+
+    .info h3,
+    .resume h3,
+    .resume li {
+        font-size: 20px
+    }
+
+    .languages {
+        font-size: 18px
+    }
+
+    .half1 {
+        padding-left: 10px
+    }
+
+    .other {
+        padding-left: 10px
+    }
+
+    .half2 {
+        padding-right: 20px
+    }
+
+    .resume h2 {
+        font-size: 35px
+    }
+
+    .info3 h2 {
+        font-size: 25px
+    }
+
+    .info3 h1 {
+        margin-top: 0
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .header {
+        margin-top: 30px;
+        height: 650px;
+        background-size: contain
+    }
+
+    #name {
+        margin-top: 0;
+        font-size: 150px
+    }
+
+    #name span {
+        margin-right: 20px
+    }
+
+    .aboutme h3 {
+        margin-top: 0
+    }
+
+    .resume{
+        padding-left: 75px;
+        padding-right:75px;
+    }
+    #title,
+    .resume h1,
+    .info3 h1 {
+        font-size: 70px
+    }
+
+    .resume h2 {
+        font-size: 50px
+    }
+
+    .half2 {
+        padding-right: 20px
+    }
 }
