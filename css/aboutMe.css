@@ -133,110 +133,8 @@ a:active {
     
 }
 
-.resume {
-    background-color: #124559;
-    position: relative;
-    width: 100%;
-    color: #AEC3B0;
-    padding-bottom: 20px;
-    margin-top: -50px
-}
-
-.resume ul {
-    list-style-type: disc
-}
-
-.resume h1 {
-    text-align: right;
-    padding: 20px;
-    width: 100%
-}
-
-.resume h2 {
-    padding-left: 20px;
-    float: left;
-    text-align: left
-}
-
-.education {
-    position: relative;
-    width: 100%;
-    height: fit-content
-}
-
-hr {
-    height: 5px;
-    background-color: #EFF6E0;
-    width: 100%
-}
-
-.half1 {
-    display: inline-block;
-    max-width: 70%;
-    text-align: left;
-    height: auto;
-    padding-left: 20px;
-    left: 0
-}
-
-#whole {
-    width: 100%
-}
-
-.half2 {
-    max-width: 30%;
-    text-align: right;
-    padding-right: 20px;
-    height: auto;
-    float: right
-}
-
-.other {
-    position: relative;
-    width: 100%;
-    text-align: left;
-    padding-left: 20px;
-    padding-right: 20px
-}
-
 #sub {
     margin-top: -10px
-}
-
-.experience,
-.leadership,
-.projects,
-.skills {
-    position: relative;
-    width: 100%;
-    height: auto
-}
-
-.skills .info {
-    padding: 10px
-}
-
-.skills span {
-    font-style: italic
-}
-
-.info3 {
-    position: relative;
-    background-color: #01161E;
-    display: flex;
-    width: 100%;
-    height: 300px;
-    color: #598392
-}
-
-.info3 h1 {
-    text-align: center;
-    top: 0;
-    width: 100%;
-    position: absolute;
-    padding: 20px;
-    width: 100%;
-    height: auto
 }
 
 .more {
@@ -247,11 +145,6 @@ hr {
     bottom: 0
 }
 
-.info3 h2 {
-    position: relative;
-    text-align: center;
-    width: 100%
-}
 
 .button {
     display: flex;
@@ -263,7 +156,7 @@ hr {
     padding-bottom: 20px;
     text-decoration: none
 }
-
+    
 button {
     position: relative;
     display: flex;
@@ -419,45 +312,13 @@ button:hover {
         margin-right: 20px
     }
 
-    .info h3,
-    .resume h3,
-    .resume li {
-        font-size: 17px
-    }
-
     .languages {
         font-size: 15px
     }
-
     #title,
     .resume h1,
     .info3 h1 {
         font-size: 40px
-    }
-
-    .half1 {
-        padding-left: 10px
-    }
-
-    .other {
-        padding-left: 10px
-    }
-
-    .half2 {
-        padding-right: 10px
-    }
-
-    .resume h2 {
-        padding-left: 10px;
-        font-size: 35px
-    }
-
-    .info3 h2 {
-        font-size: 25px
-    }
-
-    .info3 h1 {
-        margin-top: 0
     }
 }
 
@@ -470,50 +331,19 @@ button:hover {
         margin-right: 20px
     }
 
-    .info h3,
-    .resume h3,
-    .resume li {
-        font-size: 15px
-    }
-
+ 
     .languages {
         font-size: 13px
     }
-
     #title,
     .resume h1,
     .info3 h1 {
         font-size: 40px
     }
-
-    .half1 {
-        padding-left: 10px
-    }
-
-    .other {
-        padding-left: 10px
-    }
-
-    .half2 {
-        padding-right: 10px
-    }
-
-    .resume h2,
-    .info3 h2 {
-        font-size: 20px
-    }
-
-    .info3 h1 {
-        margin-top: 0
-    }
-
     .aboutme {
         margin-top: 30px
     }
 
-    .resume {
-        margin-top: -30px
-    }
 }
 
 @media only screen and (min-width: 530px) {
@@ -534,42 +364,6 @@ button:hover {
         margin-top: -40px
     }
 
-    .resume h3 {
-        padding-left: 10px
-    }
-
-    .info h3,
-    .resume h3,
-    .resume li {
-        font-size: 17px
-    }
-
-    .languages {
-        font-size: 15px
-    }
-
-    #title,
-    .resume h1,
-    .info3 h1 {
-        font-size: 40px
-    }
-
-    .resume h2 {
-        font-size: 35px;
-        padding-left: 20px
-    }
-
-    .info3 h2 {
-        font-size: 25px
-    }
-
-    .info3 h1 {
-        margin-top: 25px
-    }
-
-    .half2 {
-        padding-right: 20px
-    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -589,16 +383,7 @@ button:hover {
         margin-right: 20px
     }
 
-    .resume h2 {
-        font-size: 30px
-    }
-
-    .info h3,
-    .resume h3,
-    .resume li {
-        font-size: 20px
-    }
-
+    
     .languages {
         font-size: 18px
     }
@@ -609,29 +394,7 @@ button:hover {
         font-size: 50px
     }
 
-    .half1 {
-        padding-left: 10px
-    }
-
-    .other {
-        padding-left: 10px
-    }
-
-    .half2 {
-        padding-right: 20px
-    }
-
-    .resume h2 {
-        font-size: 35px
-    }
-
-    .info3 h2 {
-        font-size: 25px
-    }
-
-    .info3 h1 {
-        margin-top: 0
-    }
+   
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -661,39 +424,12 @@ button:hover {
         font-size: 40px
     }
 
-    .info h3,
-    .resume h3,
-    .resume li {
-        font-size: 20px
-    }
 
     .languages {
         font-size: 18px
     }
 
-    .half1 {
-        padding-left: 10px
-    }
 
-    .other {
-        padding-left: 10px
-    }
-
-    .half2 {
-        padding-right: 20px
-    }
-
-    .resume h2 {
-        font-size: 35px
-    }
-
-    .info3 h2 {
-        font-size: 25px
-    }
-
-    .info3 h1 {
-        margin-top: 0
-    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -717,21 +453,12 @@ button:hover {
         margin-top: 0
     }
 
-    .resume{
-        padding-left: 75px;
-        padding-right:75px;
-    }
+     
     #title,
     .resume h1,
     .info3 h1 {
         font-size: 70px
     }
 
-    .resume h2 {
-        font-size: 50px
-    }
 
-    .half2 {
-        padding-right: 20px
-    }
 }
