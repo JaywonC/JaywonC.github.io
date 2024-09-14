@@ -324,17 +324,16 @@ li a::after {
   }
 
   .home .image img {
-    max-width: 70%; /* Adjust this percentage to control the size of the image */
-    height: auto; /* Keeps the aspect ratio */
-    object-fit: cover; /* Ensures the image covers the container */
+    max-width: 70%;
+    height: auto;
+    object-fit: cover;
     animation-duration: 3s;
     animation-name: float-down;
-    position: relative; /* Change from absolute to relative for normal flow */
-    top: 0; /* Remove centering adjustments */
-    left: 0; /* Remove centering adjustments */
-    transform: none; /* Remove transform to fit new size */
-}
-
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
