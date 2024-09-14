@@ -1,50 +1,224 @@
-/* Video Background */
-.container video {
-  position: absolute;
-  z-index: 0; /* Place video behind everything else */
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover; /* Ensures video fills the background without stretching */
-  top: 0;
-  left: 0;
+@charset "utf-8";
+
+@font-face {
+   font-family: 'Open Sans';
+   font-style: normal;
+   font-weight: 300;
+   src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+@font-face {
+   font-family: 'Open Sans';
+   font-style: normal;
+   font-weight: 400;
+   src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+   font-family: 'Open Sans';
+   font-style: normal;
+   font-weight: 600;
+   src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff) format('woff');
 }
 
-/* Overlay */
-.overlay {
-  position: absolute;
-  z-index: 2; /* Ensure this is on top of the video */
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #EFF6E0; /* Overlay content color */
+body { 
+   font-family: 'Open Sans', Georgia, Times, 'Times New Roman', serif;
+   background-color: #caf0f8;
+   color: black;
+   font-size: 1.3em;
+   padding: 0;
+   margin: 0;
+} 
+
+html {
+   scroll-behavior: smooth;
 }
 
-/* Navbar */
-.navBar {
-  position: absolute;
-  top: 10%; /* Adjust as needed */
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 3; /* Make sure it's layered above the video */
+p {
+   padding-bottom: 0px;
 }
 
-/* Home Page Text */
-.home .text {
-  position: relative;
-  z-index: 3; /* Ensure the text is above the video */
-  color: #EFF6E0;
-  text-align: center;
-  font-family: 'Kavoon', sans-serif;
+li {
+   list-style-type: circle;
 }
 
-.home .image {
-  position: relative;
-  z-index: 3; /* Layer the image properly */
-  max-width: 100%;
-  object-fit: cover;
+h1, h2, h3 {
+   font-family: "Arial", sans-serif;
+   font-weight: bold;
+}
+
+h1 {
+   color: #03045e;
+   font-size: 1.7em;
+}
+
+h2 {
+   color: #03045e;
+   font-size: 1.5em;
+   border-bottom: 1px solid #889A9C;
+}
+
+h3 {
+   color: #023e8a;
+   font-size: 1.2em;
+   font-weight: normal;
+}
+
+/* Hyperlink styles */
+a {
+   color: #03045e;
+   text-decoration: none;
+}
+a:visited {
+   color: #03045e;
+}
+a:hover {
+   color: #0077b6;
+}
+a:active {
+   color: #0077b6;
+}
+
+/* Containers */
+.main_content {
+   float: right;
+   width: 70%;
+   margin: 25px 15%;
+}
+
+.main_content li {
+   list-style-image: url(bullet.jpg);
+   list-style-position: outside;
+}
+
+.edges {
+   background-image: url(background.jpg);
+   background-repeat: repeat-y;
+   color: black;
+   margin: 0;
+   height: auto;
+   overflow: auto;
+}
+
+.imgHead {
+   float: right;
+   margin: 20px;
+}
+
+.sidebar {
+   color: #889A9C;
+   font-size: small;
+   font-variant: small-caps;
+   line-height: 1.2;
+   padding-right: 10px;
+   border-right: 1px solid #889A9C;
+   width: 200px;
+   float: left;
+   vertical-align: top;
+   margin: 25px 25px 0 25px;
+}
+
+.footer {
+   clear: both;
+   margin: 0;
+   font-size: .9em;
+   text-align: center;
+   color: #889A9C;
+   background-color: #caf0f8;
+   padding: 10px;
+}
+
+.banner {
+   text-align: center;
+   margin: 0;
+   padding: 0;
+   background-image: url(DebateSpeaker2.jpg);
+   background-repeat: no-repeat;
+   background-position: top center;
+   background-size: cover; /* Changed from 100% to cover */
+   position: relative; /* Ensure the banner's content can be positioned */
+}
+
+.banner h1 {
+   color: white;
+   margin: 0;
+   font-size: 70px;
+   font-family: Arial, sans-serif;
+   padding: 25% 0 0 25px; /* Adjust padding */
+}
+
+.banner h2 {
+   color: white;
+   font-size: 20px;
+   font-variant: small-caps;
+   font-weight: bold;
+   font-family: Arial, sans-serif;
+   padding: 0 0 16.5% 25px; /* Adjust padding */
+}
+
+/* Navigation Bar */
+.horizon {
+   text-align: center;
+   font-size: 14px;
+   font-weight: bold;
+   padding: 10px 0;
+   background-color: #03045e;
+   overflow: hidden;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 1000; /* Ensure it's on top */
+}
+
+.horizon ul {
+   margin: 0;
+   padding: 0;
+   font-size: 14px;
+}
+
+.horizon li {
+   list-style-type: none;
+   font-weight: bold;
+   padding: 10px 0;
+}
+
+.horizon a {
+   color: white;
+   text-decoration: none;
+   cursor: pointer;
+   padding-left: 20px;
+}
+
+.horizon a:hover {
+   text-decoration: none;
+   border-left: 1px solid white;
+   padding-left: 18px;
+}
+
+.sub {
+   margin: 25px;
+}
+
+/* Grid Styling */
+.grid {
+   display: inline-block;
+   margin: 5px 20px;
+   padding: 10px;
+   border: 3px solid #03045e;
+   font-size: large;  
+   background-color: white;
+}
+
+.grid p {
+   font-size: x-large;
+   font-weight: bold;
+   color: #03045e;
+}
+
+.grid a {
+   color: #03045e;
+   text-decoration: none;
+}
+
+.grid a:hover {
+   color: #0077b6;
+   border-bottom: 1px solid #0077b6;
 }
