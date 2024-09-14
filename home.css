@@ -1,0 +1,140 @@
+/* General Reset and Body Styles */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Karma', sans-serif;
+   color: #333;
+}
+
+/* Intro Section */
+.intro {
+   background-color: #03045e;
+   color: white;
+   text-align: center;
+   padding: 20px 0;
+}
+
+.logo-header {
+   margin: 0;
+}
+
+.logo {
+   font-family: 'Kavoon', sans-serif;
+   font-size: 3em;
+}
+
+.tab.logo {
+   display: block;
+   font-size: 2.5em;
+}
+
+/* Header Section */
+header {
+   height: 60px;
+   background-color: #03045e;
+}
+
+/* Container and Video Background */
+.container-fluid {
+   position: relative;
+   height: 100vh;
+   overflow: hidden;
+}
+
+video#video {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   z-index: -1;
+}
+
+.overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text readability */
+   color: white;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.brand a {
+   color: #fff;
+   font-family: 'Kavoon', sans-serif;
+   font-size: 2em;
+   text-decoration: none;
+}
+
+.navBar {
+   list-style: none;
+   padding: 0;
+   margin: 20px 0;
+}
+
+.navBar li {
+   display: inline-block;
+   margin: 0 15px;
+}
+
+.navBar a {
+   color: #fff;
+   text-decoration: none;
+   font-family: 'Kavoon', sans-serif;
+   font-size: 1.2em;
+}
+
+.navBar a .glow {
+   color: #FFD700;
+}
+
+/* Home Content */
+.home {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 20px;
+}
+
+.text {
+   max-width: 500px;
+   text-align: left;
+}
+
+.info h1 {
+   font-family: 'Kavoon', sans-serif;
+   font-size: 2.5em;
+   margin-bottom: 10px;
+}
+
+.info h2 {
+   font-family: 'Kavoon', sans-serif;
+   font-size: 2em;
+   margin-bottom: 10px;
+}
+
+.info h3 {
+   font-family: 'Karma', sans-serif;
+   font-size: 1.5em;
+}
+
+.image {
+   text-align: center;
+}
+
+.image img {
+   max-width: 100%;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
