@@ -24,3 +24,4 @@ if (intro && logoSpan.length > 0) {
     }, 100);  // Adding a small initial delay just to ensure everything is rendered
   });
 }
+
