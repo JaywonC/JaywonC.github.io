@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background-color: #01161e;
+  background-color: #060b52;
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -152,7 +152,7 @@ li a {
   margin-left: 10px;
   margin-right: 10px;
   text-decoration: none;
-  color: #EFF6E0;
+  color: #060b52;
   font-size: 20px
 }
 
