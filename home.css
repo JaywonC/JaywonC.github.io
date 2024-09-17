@@ -145,6 +145,18 @@ li {
   height: fit-content
 }
 
+.navBar a {
+  color: #060b52 !important;  /* Force this color with !important */
+  font-family: 'Kavoon', sans-serif !important;  /* Ensure Kavoon font is applied */
+  text-decoration: none;
+  font-size: 30px;
+}
+
+/* Hover effect for all navBar links */
+.navBar a:hover {
+  color: #EFF6E0 !important;  /* Hover color */
+}
+
 li a {
   display: block;
   text-align: center;
@@ -152,9 +164,9 @@ li a {
   margin-left: 10px;
   margin-right: 10px;
   text-decoration: none;
-  color: #060b52;
-  font-size: 20px
+  font-size: 20px;
 }
+
 
 a :link,
 a:visited,
@@ -267,17 +279,8 @@ li a::after {
     display: inline-block;
     vertical-align: middle
   }
-  li a {
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-decoration: none;
-    color: #060b52;
-    font-size: 20px
-  }
   
+
   .home .text .info {
     position: absolute;
     top: 45%;
