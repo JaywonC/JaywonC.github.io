@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background-color: #059c56;
+    background-color: #01161e;
     margin: 0;
     padding: 0;
     overflow-x: hidden
@@ -103,7 +103,7 @@ a:active {
 }
 
 #name {
-    color: #124559;
+    color: #060b52;
     width: auto;
     -webkit-text-stroke: 1px #598392;
     text-shadow: 4px 2px 2px #AEC3B0
@@ -113,7 +113,7 @@ a:active {
     position: relative;
     width: 100%;
     color: #EFF6E0;
-    background-color: #598392;
+    background-color: #0d9937;
     padding: 10px;
     text-align: left;
     margin-top: 50px
@@ -269,7 +269,7 @@ button:hover {
       bottom: 0;
       width: 100%;
       height: auto;   /* Height of the footer */
-      background-color: #059c56;
+      background-color: #01161E;
       padding:20px;
     }
 
