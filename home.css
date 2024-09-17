@@ -174,7 +174,7 @@ li a::after {
 }
 
 #home .glow {
-  color: #EFF6E0;
+  color: #060b52;
   text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc
 }
 
@@ -267,7 +267,17 @@ li a::after {
     display: inline-block;
     vertical-align: middle
   }
-
+  li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #060b52;
+    font-size: 20px
+  }
+  
   .home .text .info {
     position: absolute;
     top: 45%;
