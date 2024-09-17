@@ -40,7 +40,7 @@ body {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #EFF6E0;
+  color: #060b52;
   text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc
 }
 
@@ -159,7 +159,7 @@ a :link,
 a:visited,
 a:hover,
 a:active {
-  color: #EFF6E0;
+  color: #060b52;
   text-decoration: none
 }
 
