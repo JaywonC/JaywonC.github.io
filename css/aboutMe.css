@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background-color: #01161e;
+    background-color: #059c56;
     margin: 0;
     padding: 0;
     overflow-x: hidden
@@ -68,7 +68,7 @@ body {
     margin-right: 10px;
     text-decoration: none;
     color: #EFF6E0;
-    font-size: 20px
+    font-size: 30px
 }
 
 a :link,

@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background-color: #060b52;
+  background-color: #059c56;
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -123,9 +123,6 @@ ul {
   text-decoration: none
 }
 
-.navBar a:hover {
-  color: #060b52;  /* Your intended hover color */
-}
 
 li {
   color: #060b52 !important; 
