@@ -129,8 +129,13 @@ ul {
   text-decoration: none;
   font-size: 30px;
 }
+#aboutMe a {
+  color: #060b52 /* Different color */
+}
+#home a {
+  color: #060b52;  /* Change the color */
+}
 
-/* Apply hover effect to all navBar links */
 .navBar a:hover {
   color: #060b52;  /* Your intended hover color */
 }
