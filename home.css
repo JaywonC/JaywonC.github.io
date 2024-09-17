@@ -124,13 +124,15 @@ ul {
 }
 
 .navBar a {
-  color: #060b52; 
+  color: #060b52;  /* Your intended color */
+  font-family: 'Kavoon', sans-serif;  /* Apply Kavoon font */
   text-decoration: none;
   font-size: 30px;
 }
 
+/* Apply hover effect to all navBar links */
 .navBar a:hover {
-  color: #060b52; /
+  color: #060b52;  /* Your intended hover color */
 }
 
 li {
@@ -272,7 +274,7 @@ li a::after {
 
   .home .text h1 {
     font-size: 8vw;
-    color: #598392;
+    color: #063243;
     float: left;
     width: 100%;
     animation-duration: 3s;
@@ -301,7 +303,7 @@ li a::after {
   .home .text #name {
     font-family: 'Pecita', sans-serif;
     color: #EFF6E0;
-    text-shadow: 5px 5px 0 #40798c
+    text-shadow: 5px 5px 0 #063243
   }
 
   .home .text #role {
