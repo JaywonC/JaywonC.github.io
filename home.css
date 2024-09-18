@@ -85,13 +85,16 @@ header h4 {
 }
 
 .container video {
-  position: absoulte;
+  position: absolute;
   z-index: 0;
-  width: 100%;
+  top: 0;
+  left: 0;
+  width: 100vw;
   height: 100vh;
-  object-fit: fill;
-  overflow-x: hidden !important
+  object-fit: cover;
+  overflow-x: hidden !important;
 }
+
 
 .overlay {
   position: absolute;
