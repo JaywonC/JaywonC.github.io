@@ -87,7 +87,7 @@ header h4 {
 .container video {
   position: relative;
   z-index: 0;
-  width: 100%;
+  width: 500;
   height: 50;
   overflow-x: hidden !important
 }
