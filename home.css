@@ -8,9 +8,8 @@
 
 html {
   scroll-behavior: smooth;
-  min-height: 500vh;
-  max-width: 500vh;
-  overflow-y: scroll
+  min-height: 100vh;
+  overflow-y: hidden
 }
 
 body {
