@@ -9,17 +9,15 @@
 html {
   scroll-behavior: smooth;
   min-height: 100vh;
-  overflow-y: hidden
 }
 
 body {
-  background-color: #059c56;
+  background-color: #059c9c;
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: 500vh;
   width: 100vh;
-  overflow-x: hidden
-
+  overflow-x: hidden;
 }
 
 /* splash screen */
