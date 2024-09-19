@@ -32,7 +32,10 @@ body {
   transition: 1s;
   font-family: pecita
 }
-
+.imgHead {
+  float:right;
+  margin: 20px;
+}
 .logo-header {
   position: absolute;
   top: 40%;
@@ -41,7 +44,9 @@ body {
   color: #ffffff;
   text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc
 }
-
+p {
+  font-size: 22px;
+}
 .logo {
   position: relative;
   display: inline-block;
@@ -85,7 +90,7 @@ header h4 {
 }
 
 .container video {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   width: 100vw;
@@ -116,7 +121,8 @@ ul {
 .brand {
   position: relative;
   width: 100%;
-  text-align: center
+  text-align: center;
+  background-color: #067272
 }
 
 .brand a {
@@ -134,12 +140,17 @@ li {
   display: inline-block;
   height: fit-content
 }
-
+.navBar{
+  background-color: #067272;
+}
 .navBar a {
   color: #060b52 !important;  /* Force this color with !important */
   font-family: 'Kavoon', sans-serif !important;  /* Ensure Kavoon font is applied */
   text-decoration: none;
   font-size: 30px;
+  position:relative;
+  top: 10px;
+  z-index:1
 }
 
 /* Hover effect for all navBar links */
@@ -222,7 +233,7 @@ li a::after {
   }
 
   .text h1 {
-    font-size: 12vw;
+    font-size: 30;
     color: #598392
   }
 
