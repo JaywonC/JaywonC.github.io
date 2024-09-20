@@ -9,7 +9,6 @@
 html {
   scroll-behavior: smooth;
   min-height: 100vh;
-  overflow-y: scroll;
 }
 
 body {
@@ -42,7 +41,7 @@ body {
   text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc
 }
 p {
-  font-size: 22px;
+  font-size: 26px;
 }
 .logo {
   position: relative;
@@ -202,7 +201,7 @@ h2 {
 
 h3 {
   color: #ffffff;
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: normal;
   font-family: 'Times New Roman', Times, serif
 }
