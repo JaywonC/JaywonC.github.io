@@ -308,6 +308,7 @@ li a::after {
   body {
     overflow-y: visible;
     height: fit-content;
+    text-align: center;
     height: 100vh
   }
 
