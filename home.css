@@ -298,70 +298,7 @@ li a::after {
   }
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  html {
-    overflow-y: visible !important;
-    overflow-x: hidden !important
-  }
 
-  body {
-    overflow-y: visible;
-    height: fit-content;
-    text-align: center;
-    height: 100vh
-  }
-
-  li {
-    width: 100%
-  }
-
-  .home {
-    position: relative;
-    width: 100%
-  }
-
-  .text {
-    position: relative;
-    width: 100%;
-    text-align: center;
-    padding: 10px
-  }
-  .text h1 {
-    font-size: 30;
-    color: #598392
-  }
-
-  .text h2 {
-    font-size: 7vw;
-    color: #EFF6E0
-  }
-
-  .text h3 {
-    font-size: 5vw;
-    color: #AEC3B0;
-    font-style: italic
-  }
-
-  .image {
-    position: relative;
-    margin: auto
-  }
-
-  .image img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover
-  }
-
-
-  /* Hide the video on mobile to prevent layout issues */
-  .container video {
-    display: none;
-  }
-
-  
-}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
