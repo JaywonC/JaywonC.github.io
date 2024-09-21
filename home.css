@@ -352,7 +352,6 @@ li a::after {
     height: auto;
     object-fit: cover
   }
-  .overlay1 {
     .overlay1 {
       height: auto;
       min-height: 100vh;
@@ -367,7 +366,7 @@ li a::after {
       width: 100%;
       padding-top: 10px;
     }
-  }
+  
   .container video{
     display:none;
   }
