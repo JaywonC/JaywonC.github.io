@@ -15,9 +15,10 @@ body {
   background-color: #279d56;
   margin: 0;
   padding: 0;
-  height: 100vh;
-  width: 100vh;
+  height: auto;
+  width: 100%;
   overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .intro {
