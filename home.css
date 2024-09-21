@@ -358,11 +358,28 @@ li a::after {
     height: auto; /* Ensure it adjusts to content height */
     min-height: auto; /* Remove fixed height to avoid space */
   }
+  .horizon {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    background-color: #14ab3f;
+    padding: 5px;
+  }
+  .main_content {
+    margin: 0;
+    padding: 10px; /* Reduce padding for better fit on mobile */
+  }
+  .overlay2 {
+    margin: 0;
+    padding-top: 10px;
+  }
 
   /* Tighten up .overlay */
   .overlay {
     margin-top: 0; /* Remove unnecessary margin */
-    padding-top: 5px;
+    padding-top: 5px; 
     padding-bottom: 5px;
   }
   
