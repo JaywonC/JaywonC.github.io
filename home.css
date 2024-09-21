@@ -164,8 +164,19 @@ header h4 {
 
 }
 .main_content li {
- list-style-image: url(bullet.jpg);
- list-style-position: outside;
+list-style-type: disc; 
+list-style-position: outside;
+ margin-left: 0; /* Ensure no extra margin */
+ padding-left: 20px; /* Adjust this value based on how close to the edge you want */
+ font-size: 1.5rem;
+ color: #210f88;
+ text-align: left ;
+}
+.main_content ul {
+  list-style-type: disc; /* Ensure the bullet points are enabled */
+  list-style-position: outside;
+  margin-left: 20px; /* Provides space for the bullets */
+  padding-left: 20px; /* Adjust as needed */
 }
 .overlay2 {
   position: relative;
@@ -178,6 +189,7 @@ header h4 {
 .overlay2 p{
   font-weight: normal;
   color: #ffffff;
+  font-size: 1.5rem;
   font-family: 'Times New Roman', Times, serif
 }
 .imgHead {
@@ -201,7 +213,7 @@ h2 {
 
 h3 {
   color: #ffffff;
-  font-size: 1.4em;
+  font-size: 1.7em;
   font-weight: normal;
   font-family: 'Times New Roman', Times, serif
 }
@@ -214,7 +226,7 @@ ul {
 }
 
 
-li {
+li .overlay {
   color: #060b52 !important; 
   display: inline-block;
   height: fit-content
