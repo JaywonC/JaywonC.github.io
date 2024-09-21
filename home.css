@@ -326,10 +326,6 @@ li a::after {
     text-align: center;
     padding: 10px
   }
-  .overlay1 {
-    height: auto; /* Allow the overlay to adjust to the content on small screens */
-    padding: 10px; /* Add padding for mobile */
-  }
   .text h1 {
     font-size: 30;
     color: #598392
