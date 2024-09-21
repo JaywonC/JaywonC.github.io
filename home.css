@@ -362,6 +362,10 @@ li a::after {
     overflow-y: auto; /* Allow scrolling on mobile */
     padding: 10px; /* Add some padding for readability */
   }
+  .container video{
+    width: 1;  /* Full width */
+    height: 1%;
+  }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
