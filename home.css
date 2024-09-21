@@ -353,42 +353,45 @@ li a::after {
     object-fit: cover
   }
   .overlay1 {
-    margin-top: 0; /* Remove any unnecessary top margin */
-    padding: 5px; /* Tighten padding */
-    height: auto; /* Ensure it adjusts to content height */
-    min-height: auto; /* Remove fixed height to avoid space */
+    margin-top: 0; /* Remove extra top margin */
+    padding: 5px;  /* Reduce padding for tighter layout */
+    height: auto;  /* Make sure height adjusts to content */
+    min-height: auto; /* Avoid forced minimum height */
   }
+
+  /* Fix alignment for .overlay */
+  .overlay {
+    margin-top: 0;  /* Remove unnecessary margin */
+    padding-top: 5px; /* Reduce padding to avoid large spaces */
+    padding-bottom: 5px; /* Same as above */
+  }
+
+  /* Ensure .horizon stays fixed without extra space */
   .horizon {
-    position: fixed;
+    position: fixed; /* Keep horizon fixed */
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 3;
+    z-index: 3;  /* Ensure it stays above everything */
     background-color: #14ab3f;
-    padding: 5px;
-  }
-  .main_content {
-    margin: 0;
-    padding: 10px; /* Reduce padding for better fit on mobile */
-  }
-  .overlay2 {
-    margin: 0;
-    padding-top: 10px;
+    padding: 5px; /* Reduce padding for mobile */
   }
 
-  /* Tighten up .overlay */
-  .overlay {
-    margin-top: 0; /* Remove unnecessary margin */
-    padding-top: 5px; 
-    padding-bottom: 5px;
+  /* Ensure main content fits well */
+  .main_content {
+    margin: 0; /* Remove unnecessary margins */
+    padding: 10px; /* Adjust padding to fit content */
   }
-  
-  .container video{
-    display:none;
+
+  /* Hide the video on mobile to prevent layout issues */
+  .container video {
+    display: none;
   }
+
+  /* Remove z-index conflicts for proper stacking order */
   .overlay1, .overlay, .horizon {
-    position: relative; /* Make sure they're positioned relative to the flow */
-    z-index: auto; /* Default stacking order */
+    z-index: auto; /* Let the elements stack naturally */
+    position: relative; /* Avoid unwanted overlapping */
   }
   
 }
