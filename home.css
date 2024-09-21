@@ -353,25 +353,29 @@ li a::after {
     object-fit: cover
   }
   .overlay1 {
-    position: relative; /* Change to relative for mobile */
-    height: auto; /* Let the height adjust to content */
-    min-height: 0vh; /* Ensure it covers the screen */
-    overflow-y: auto; /* Allow scrolling on mobile */
-    padding: 10px; /* Add some padding for readability */
+    .overlay1 {
+      height: auto;
+      min-height: 100vh;
+      overflow-y: auto;
+      padding: 10px;
+      margin-top: 70px; /* Adjust based on .horizon height */
+    }
+  
+    .overlay {
+      position: relative;
+      margin-top: 20px;
+      width: 100%;
+      padding-top: 10px;
+    }
   }
   .container video{
-    width: 0%;  /* Full width */
-    height: 0%;
+    display:none;
   }
-  .overlay {
-    position: relative;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    display: inline-block;
-    padding-top: 30px
+  .overlay1, .overlay, .horizon {
+    position: relative; /* Make sure they're positioned relative to the flow */
+    z-index: auto; /* Default stacking order */
   }
+  
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
