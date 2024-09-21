@@ -358,7 +358,7 @@ li a::after {
   .overlay1 {
     position: relative; /* Change to relative for mobile */
     height: auto; /* Let the height adjust to content */
-    min-height: 100vh; /* Ensure it covers the screen */
+    min-height: 1vh; /* Ensure it covers the screen */
     overflow-y: auto; /* Allow scrolling on mobile */
     padding: 10px; /* Add some padding for readability */
   }
