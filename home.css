@@ -252,15 +252,15 @@ li .overlay {
 .navBar a:hover {
   color: #ffffff !important;  /* Hover color */
 }
-
-li a {
+.navBar li a {
   display: block;
   text-align: center;
   padding: 14px 16px;
   margin-left: 10px;
   margin-right: 10px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 30px;
+  
 }
 
 
