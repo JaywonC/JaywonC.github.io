@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  background-color: #279d56;
+  background-color: #137c3d;
   margin: 0;
   padding: 0;
   height: auto;
@@ -43,6 +43,7 @@ body {
 }
 p {
   font-size: 26px;
+  color:white;
 }
 .logo {
   position: relative;
@@ -73,7 +74,7 @@ p {
      overflow: hidden;
     position: fixed; 
     top: 0; 
-    width: 100%; 
+    width: 100%;
     z-index:3
   }
   
@@ -141,7 +142,7 @@ header h4 {
 }
 
 .overlay1 h1 {
-  font-size: 4rem; /* Increase the size of the text */
+  font-size: 4.2rem; /* Increase the size of the text */
   font-weight: bold; /* Make the text bold */
   color: white; /* You can adjust the color if needed */
   text-align: center; /* Center the text horizontally */
@@ -149,7 +150,7 @@ header h4 {
 }
 
 .overlay1 h2 {
-  font-size: 2.5rem; /* Increase the size of the text */
+  font-size: 2.7rem; /* Increase the size of the text */
   font-weight: bold; /* Make the text bold */
   color: white; /* You can adjust the color if needed */
   text-align: center; /* Center the text horizontally */
@@ -161,7 +162,7 @@ header h4 {
   margin-top: 25px;
     margin-left: 15vw;
     margin-right: 15vw;
-    background-color: #279d56;
+    background-color: #137c3d;
     font-weight: normal;
 
 }
@@ -171,7 +172,7 @@ list-style-position: outside;
  margin-left: 0; /* Ensure no extra margin */
  padding-left: 20px; /* Adjust this value based on how close to the edge you want */
  font-size: 1.5rem;
- color: #210f88;
+ color: #6cd2da;
  text-align: left ;
 }
 .main_content ul {
@@ -196,8 +197,12 @@ list-style-position: outside;
 }
 .imgHead {
   float:right;
-  margin: 20px;
+  margin: 0px;
+  border: 5px solid #73AD21;
+  padding: 20px;
+  border-radius: 5px;
 }
+
 h1 {
   color: #03045e;
   font-size: 2.5rem;
@@ -206,16 +211,16 @@ h1 {
 
 h2 {
  color: #3739bf;
- font-size: 1.8rem;
- border-bottom-width: 1px;
+ font-size: 1.9rem;
+ border-bottom-width: 3px;
  border-bottom-style: solid;
  border-bottom-color: #889A9C;
  font-family:kavoon
 }
 
 h3 {
-  color: #ffffff;
-  font-size: 1.7em;
+  color: #0f0c96;
+  font-size: 1.9em;
   font-weight: normal;
   font-family: 'Times New Roman', Times, serif
 }
@@ -250,7 +255,7 @@ li .overlay {
 
 /* Hover effect for all navBar links */
 .navBar a:hover {
-  color: #ffffff !important;  /* Hover color */
+  color: #1f98a8 !important;  /* Hover color */
 }
 .navBar li a {
   display: block;
@@ -266,14 +271,16 @@ li .overlay {
 
 a :link,
 a:visited,
-a:hover,
 a:active {
   color: #EFF6E0;
   text-decoration: none
 }
 
+a:hover{
+  color: #ffffff;
+}
 li a:hover .glow {
-  color: #EFF6E0;
+  color: #1f98a8;
   text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc
 }
 
