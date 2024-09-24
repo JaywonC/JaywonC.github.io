@@ -285,6 +285,27 @@ li a::after {
   color: #EFF6E0;
   text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc
 }
+.ref .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+  color: #01161e;
+ }
+
+.ref svg {
+  display:inline-block;
+  color: #598392;
+  text-decoration: none; 
+  margin-left:10px;
+  margin-right:10px;
+}
+
+.ref svg:hover {
+  cursor: pointer;
+  opacity: 0.5;
+ }
 
 @media (max-width: 767px) {
   .thumb-row {
@@ -406,7 +427,16 @@ li a::after {
     transform: translate(-50%, -50%)
   }
 }
-
+.footer {
+	clear: both;
+	margin: 0px;
+  width:100vw;
+   font-size: .9em;
+   text-align: center;
+   color: #0e0797;
+   background-color: #1a9a3e;
+   padding: 10px;
+}
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {}
 
